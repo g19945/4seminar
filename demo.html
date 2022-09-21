@@ -2,9 +2,26 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-
+	<link rel="stylesheet" href="demo.css">
 	<title>ManaSearch</title>
 </head>
+
+<style>
+hr {
+		border: none;
+		border-top: 6px dotted #fffacd;
+		color: white;
+		overflow: visible;
+		text-align: left;
+		height: 5px;
+	}
+
+	hr:after {
+		padding: 0 9px;
+		position: relative;
+		top: -20px;
+	}
+</style>
 
 <body bgcolor="#f5deb3" text="#ff9999" link="#ff9999" vlink="#ff9999" alink="#111111">
 
@@ -12,31 +29,31 @@
 	<button type="button" onclick="history.forward()">→</button><br>
 
 	<div style="text-align: center">
-		<a href="https://tenki.jp/forecast/3/16/4410/13211/"><img src="SUN.jpg" width="150px" alt="太陽"></a>
-	<img src= "ManaSearch.jpg" width="400px" "justify-content"=center>
-	<a href="https://www.google.co.jp/mail/help/intl/ja/about.html?vm=r"><img src="MAIL.jpg" width="150px" alt="メール"></a>
-	<a href="https://www.youtube.com/"><img src="YouTube.jpg" width="140px" alt="YouTube"></a>
+		<a href="https://transit.yahoo.co.jp/"><img src="TRAIN.jpg" width="100px" alt="電車"></a>
+		<a href="https://www.jma.go.jp/bosai/forecast/"><img src="SUN.jpg" width="100px" alt="太陽"></a>
+		<a href="file:///Users/pkrry/Documents/Unity/Html/demo.html"><img src= "ManaSearch.jpg" width="300px" "justify-content"=center>
+		<a href="https://www.google.co.jp/mail/help/intl/ja/about.html?vm=r"><img src="MAIL.jpg" width="100px" alt="メール"></a>
+		<a href="https://www.youtube.com/"><img src="YouTube.jpg" width="100px" alt="YouTube"></a>
 	</div>
-
-	<style>
-        h2{
-            margin:0 200px;
-            padding: 10px 30px;
-            background-color: #398D95;
-            color:white;
-        }
-    </style>
+	<hr>
 
 	<div>
+	<div class="point-box" >
 		・<a href="https://www.google.com/" style="text-decoration:none;">Google</a><br><br>
 		・<a href="https://www.youtube.com/" style="text-decoration:none;">YouTube</a><br><br>
 		・<a href="https://tc-portal.tsuda.ac.jp/" style="text-decoration:none;">TsudaNet</a><br><br>
+		・<a href="https://www3.nhk.or.jp/news/" style="text-decoration:none;">NHK NEWS</a><br><br>
 		・<a href="file:///Users/pkrry/Documents/Unity/Html/demo_link.html" style="text-decoration:none;">占い</a><br><br>
 		・<a href="https://www.instagram.com/" style="text-decoration:none;">Instagram</a><br><br>
 		・<a href="https://twitter.com/" style="text-decoration:none;">Twitter</a><br><br>
 		・<a href="https://www.fc-member.johnnys-net.jp/" style="text-decoration:none;">johnny's FAMILY CLUB</a><br><br>
 	<!--リンクのアンダーバーを削除「style="text-decoration:none;"」-->
 	</div>
+
+	<div class="point-box">
+		ニュース
+	</div>
+</div>
 
 	<span id="text"></span>
 
