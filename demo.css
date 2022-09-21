@@ -1,0 +1,22 @@
+/*---------------------------------
+タイトルつき囲み枠
+--------------------------------*/
+.point-box {
+  position: relative;
+  border: 6px dotted #fffacd; /* 枠の太さ・種類・色 */
+  border-radius: 6px; /* 枠の丸み */
+  margin: 0.1em 22em; /* 枠外の余白 */
+  padding: 10px 5px;
+  float: left;
+}
+
+.point-title {
+  position: absolute;
+  padding: 0 0.5em;
+  left: 20px;
+  top: -13px; /* タイトルの位置を調整 */
+  color: #555555; /* タイトルの文字色 */
+  font-weight: bold;
+  font-size:0.9em; /* タイトルの文字サイズ */
+  background-color: #ffffff;
+}
