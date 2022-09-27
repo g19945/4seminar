@@ -12,7 +12,33 @@
 	<img src= "Uranai.jpg" width="300px" "justify-content"=center>
 	</div>
 
-	<div>
+	<div style="font-size:18pt;">
+		<p>　　まずはあなたの名前を教えてください。<br>
+		<label for="last-name">　　名前(姓):</label>
+		<input type="text" id="lname" name="lname" required
+       minlength="5" maxlength="9" size="13">
+		<label for="first-name">　　名前(名):</label>
+	 	<input type="text" id="fname" name="fname" required
+	     minlength="5" maxlength="9" size="13">
+		</p>
+		<p>　　生年月日を教えてください。<br>
+		<label for="birthday">　　生/年/月/日:</label>
+	 	<input type="text" id="birthday" name="birthday" required
+	 	   minlength="13" maxlength="10" size="18"><br>
+		</p>
+		<p>　　性別を教えてください。<br>
+	 	　　<input type="radio" name="q1" value="男"> 男
+	 	<input type="radio" name="q1" value="女"> 女
+	 	<input type="radio" name="q1" value="無"> 回答しない
+	 	</p>
+		<p>　　住まいを教えてください。<br>
+		<label for="prefectures">　　都道府県:</label>
+		<input type="text" id="pre" name="pre" required
+	      minlength="5" maxlength="9" size="13">
+		<label for="municipalities">　　市区町村:</label>
+		 <input type="text" id="mun" name="mun" required
+		    minlength="5" maxlength="9" size="13">
+	 	</p>
 	</div>
 
 	<span id="text"></span>
