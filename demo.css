@@ -8,6 +8,8 @@
   margin: 0.1em 22em; /* 枠外の余白 */
   padding: 10px 5px;
   float: left;
+  left: -330px
+
 }
 
 .point-title {
@@ -19,4 +21,107 @@
   font-weight: bold;
   font-size:0.9em; /* タイトルの文字サイズ */
   background-color: #ffffff;
+}
+
+.point-box1 {
+  position: absolute;
+  /*display: flex;*/
+  border: 6px dotted #fffacd; /* 枠の太さ・種類・色 */
+  border-radius: 6px; /* 枠の丸み */
+  margin: 0.5em 23em; /* 枠外の余白 */
+  padding: 10px 45px;
+  float: left;
+  left: -330px;
+  width: 200px;
+  height: 420px;
+}
+
+.point-box2 {
+  position: absolute;
+  /*display: flex;*/
+  border: 6px dotted #fffacd; /* 枠の太さ・種類・色 */
+  border-radius: 6px; /* 枠の丸み */
+  margin: 0.5em 45em; /* 枠外の余白 */
+  padding: 10px 20px; /*枠内の余白*/
+  float: left;
+  left: -330px;
+  width: 580px;
+  height: 420px;
+}
+
+.point-box3 {
+  position: absolute;
+  /*display: flex;*/
+  border: 6px dotted #fffacd; /* 枠の太さ・種類・色 */
+  border-radius: 6px; /* 枠の丸み */
+  margin: 0.5em 80em; /* 枠外の余白 */
+  padding: 10px 40px;
+  float: left;
+  left: -200px
+}
+
+/*///////時計////////*/
+.c-clock {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  border: 2px solid #ff99a2;
+  border-radius: 100%;
+  background:rgba(255,240,245,0.4);
+  /*background: #fff0f5;*/
+}
+.c-clock__hour {
+  position: absolute;
+  top: calc(20% - 20px);
+  left: calc(50% - 5px);
+  width: 4px;
+  height: 65px;
+  background: #ffb3b9;
+  transform-origin: bottom;
+}
+.c-clock__min {
+  position: absolute;
+  top: calc(20% - 20px);
+  left: calc(50% - 2px);
+  width: 2px;
+  height: 65px;
+  background: #ffb3b9;
+  transform-origin: bottom;
+}
+.c-clock__sec {
+  position: absolute;
+  top: calc(20% - 20px);
+  left: calc(50% - 1px);
+  width: 2px;
+  height: 65px;
+  background: #ffb3b9;
+  transform-origin: bottom;
+}
+.c-clock__12 {
+  position: absolute;
+  top: 4px;
+  left: calc(50%);
+  transform: translateX(-50%);
+  font-size: 20px;
+}
+.c-clock__3 {
+  position: absolute;
+  top: 50%;
+  right: 8px;
+  transform: translateY(-50%);
+  font-size: 20px;
+}
+.c-clock__6 {
+  position: absolute;
+  bottom: 4px;
+  left: calc(50%);
+  transform: translateX(-50%);
+  font-size: 20px;
+}
+.c-clock__9 {
+  position: absolute;
+  top: 50%;
+  left: 8px;
+  transform: translateY(-50%);
+  font-size: 20px;
 }
