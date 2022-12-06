@@ -1,0 +1,156 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="ManaSearch.css">
+	<title>ManaSearch1_ghoul</title>
+</head>
+
+<style>
+	hr {
+		border: none;
+		border-top: 6px dotted #778899;
+		color: white;
+		overflow: visible;
+		text-align: left;
+		height: 5px;
+		}
+
+	hr:after {
+		padding: 0 9px;
+		position: relative;
+		top: -20px;
+		}
+</style>
+
+<body>
+
+<!--<body bgcolor="#f5deb3" text="#ff9999" link="#ff9999" vlink="#ff9999" alink="#111111">-->
+
+	<!--<button type="button" onclick="history.back()">←</button>
+	<button type="button" onclick="history.forward()">→</button><br>-->
+
+	<div style="text-align: center">
+		<a href="https://transit.yahoo.co.jp/"><img src="TRAIN.jpg" width="100px" alt="電車"></a>
+		<a href="https://www.jma.go.jp/bosai/forecast/"><img src="SUN.jpg" width="100px" alt="太陽"></a>
+		<a href="https://g19945.github.io/4seminar/ManaSearch1_ghoul.html"><img src= "ManaSearch2.jpg" width="400px" "justify-content"=center>
+		<a href="https://www.google.co.jp/mail/help/intl/ja/about.html?vm=r"><img src="MAIL.jpg" width="100px" alt="メール"></a>
+		<a href="https://www.youtube.com/"><img src="YouTube.jpg" width="100px" alt="YouTube"></a>
+	</div>
+	<hr>
+
+	<div class="point-box1">
+
+		・<a href="https://www.google.com/" style="text-decoration:none;">Google</a><br><br>
+		・<a href="https://www.youtube.com/" style="text-decoration:none;">YouTube</a><br><br>
+		・<a href="https://tc-portal.tsuda.ac.jp/" style="text-decoration:none;">TsudaNet</a><br><br>
+		・<a href="https://www3.nhk.or.jp/news/" style="text-decoration:none;">NHK NEWS</a><br><br>
+		・<a href="https://g19945.github.io/4seminar/UranaiResult1_ghoul.html" style="text-decoration:none;">占い</a><br><br>
+		・<a href="https://www.instagram.com/" style="text-decoration:none;">Instagram</a><br><br>
+		・<a href="https://twitter.com/" style="text-decoration:none;">Twitter</a><br><br>
+		・<a href="https://slack.com/intl/ja-jp/" style="text-decoration:none;">Slack</a><br><br>
+		<!--・<a href="https://www.ipa.go.jp/index.html" style="text-decoration:none;">IPA</a><br><br>-->
+		・<a href="https://www.fc-member.johnnys-net.jp/" style="text-decoration:none;">johnny's FAMILY CLUB</a><br><br>
+	<!--リンクのアンダーバーを削除「style="text-decoration:none;"」-->
+	</div>
+
+	<div class="point-box2">
+		<a style="font-size: 20pt;color: #696969;">ニュース</a><br><hr>
+		<table>
+			<tr>
+				<td><a href="https://www3.nhk.or.jp/news/special/coronavirus/data/pref/tokyo.html"><img src="Tokyo.jpg" width="200px" alt="東京"></a></td>
+				<td><a href="https://www3.nhk.or.jp/news/special/coronavirus/data/pref/tokyo.html" style="color:#696969;">東京都コロナ感染状況 <特設サイト></a><br><a style="color:#808080;"> 今日まで1日ごとの感染者数・死者数をグラフで見ることができます。また、直近1週間の感染数推移などもわかります。</a></td>
+			</tr>
+			<tr>
+			・<a href="https://weathernews.jp/" style="color:#696969;">気温急降下へ　15℃を切るところも</a><br><br>
+			・<a href="https://news.yahoo.co.jp/pickup/6440698" style="color:#696969;">未だ足りない半導体</a><br><br>
+			・<a href="https://www.itmedia.co.jp/news/articles/2210/04/news188.html" style="color:#696969;">Jアラート誤発信で見えてくる問題</a><br><br>
+			・<a href="https://www.fujitv-view.jp/article/post-692830/" style="color:#696969;">『silent』初回放送直前インタビュー　川口春奈＆目黒蓮(Snow Man)</a><br><br>
+			</tr>
+		</table>
+	</div>
+
+	<div class="point-box3">
+		<div class="c-clock" style="color:#696969;"> <!--外枠-->
+	  <span class="c-clock__hour"></span> <!-- 時計 -->
+	  <span class="c-clock__min"></span> <!-- 分針 -->
+	  <span class="c-clock__sec"></span> <!-- 秒針 -->
+	  <span class="c-clock__12">12</span> <!-- 時計文字 -->
+	  <span class="c-clock__3">3</span> <!-- 時計文字 -->
+	  <span class="c-clock__6">6</span> <!-- 時計文字 -->
+	  <span class="c-clock__9">9</span> <!-- 時計文字 -->
+	  </div>
+
+		<script>
+	    setInterval(() => {
+	      // 現在時間の取得
+	      const now = new Date();
+	      const h = now.getHours();
+	      const m = now.getMinutes();
+	      const s = now.getSeconds();
+
+	      // 時、分、秒を元に角度を計算
+	      const degH = h * (360 / 12) + m * (360 / 12 / 60);
+	      const degM = m * (360 / 60);
+	      const degS = s * (360 / 60);
+
+	      // 各要素を取得
+	      const elementH = document.querySelector(".c-clock__hour");
+	      const elementM = document.querySelector(".c-clock__min");
+	      const elementS = document.querySelector(".c-clock__sec");
+
+	      // styleを追加
+	      elementH.style.transform = `rotate(${degH}deg)`;
+	      elementM.style.transform = `rotate(${degM}deg)`;
+	      elementS.style.transform = `rotate(${degS}deg)`;
+	    }, 10);
+	  </script>
+		<p id="RealtimeClockArea2" style="font-size: 20pt;color: #696969;"></p>
+
+		<script>
+		function set2fig(num) {
+   	// 桁数が1桁だったら先頭に0を加えて2桁に調整する
+   		var ret;
+   		if( num < 10 ) { ret = "0" + num; }
+   		else { ret = num; }
+   		return ret;
+		}
+		function showClock2() {
+   		var now = new Date();
+   		var hour = set2fig( now.getHours() );
+   		var min  = set2fig( now.getMinutes() );
+   		var sec  = set2fig( now.getSeconds() );
+
+   		var msg2 = hour + ":" + min + ":" + sec;
+   		document.getElementById("RealtimeClockArea2").innerHTML = msg2;
+		}
+		setInterval('showClock2()',1000);
+
+		</script>
+
+		<p id="view_today" style="font-size: 14pt;color: #808080;"></p>
+
+		<script>
+			document.getElementById("view_today").innerHTML = getToday();
+
+			function getToday() {
+				var now = new Date();
+				var year = now.getFullYear();
+				var mon = now.getMonth()+1; //１を足すこと
+				var date = now.getDate();
+				var day = now.getDay(); //曜日(0～6=日～土)
+
+				//曜日の選択肢
+				var dayarray = new Array("Sun","Mon","Tue","Wed","Thu","Fri","Sat");
+				//出力用
+				var s = year + "/" + mon + "/" + date + "[" + dayarray[day] + "]";
+				return s;
+			}
+		</script>
+
+	</div>
+
+	<span id="text"></span>
+
+</body>
+</html>
